@@ -54,8 +54,8 @@ def main():
     # Grabs all App IDs from Sqlite DB
     print 'Reading from Remaining.csv'
     names = []
-    input = open('Remaining.csv', 'rb')
-    for row in csv.reader(input):
+    data = open('Remaining.csv', 'rb')
+    for row in csv.reader(data):
         name = row[0]
         names.append(row[0])
     print 'Removing Empty Directories'
